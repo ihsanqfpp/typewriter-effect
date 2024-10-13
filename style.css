@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'poppins', sans-serif;
+}
+h1{
+    position: relative;
+    color: #6c63ff;
+    font-size: 4em;
+}
+h1 span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 100%;
+    border-left: 02em solid transparent;
+    -webkit-animation: typing 3s steps(20) forwards, cursor 1s infinite;
+    animation: typing 3s steps(20) forwards, cursor 1s infinite;
+}
+@-webkit-keyframes typing {
+    from{width: 100%;}
+    to{width:0}
+}
+@-webkit-keyframes cursor {
+    100%{border-color: white;}
+    
+}
+@keyframes typing {
+    from{width: 100%;}
+    to{width:0}
+}
+@keyframes cursor {
+    100%{border-color: white;}
+    
+}
